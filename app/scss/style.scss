@@ -1,7 +1,12 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
+
+.container-top{
+    max-width: 1800px;
+}
 
 .header{
     padding: 50px 0;
@@ -23,9 +28,6 @@
         color: $title;
         text-transform: capitalize;
         @extend %rubik-500;
-
-
-
     }
 }
 
@@ -92,11 +94,8 @@
     &__link-img{
         margin: 15px auto;
     }
+}
 
-}
-.footer-top{
-    
-}
 
 .footer-top{
     display: flex;
@@ -162,7 +161,6 @@
     padding-top: 30px;
     justify-content: space-between;
     &__link{
-
         position: relative;
         color: $default;
         text-transform: capitalize;
@@ -174,6 +172,95 @@
         pointer-events: none;
         right: -20px;
         
+    }
+}
+
+.top-slider{
+
+    .container-top{
+        background-color: #fcd7b6;
+    }
+    &__item{
+        padding-top: 80px;
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__content{
+        padding-top: 125px;
+        padding-left: 230px;
+        
+    
+    }
+    &__title{
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: #243f4d;
+        padding-bottom: 20px;
+    }
+    &__text{
+        @extend %rubik-400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #747e81;
+        max-width: 380px;
+        margin-bottom: 50px;
+    }
+    &__link{
+        text-transform: capitalize;
+        color: #fff;
+        background-color: #a3bbc8;
+        font-size: 15px;
+        line-height: 12px;
+        padding: 15px 100px 15px 22px;
+        position: relative;
+    }
+    &__link::after{
+        content: '';
+        position: absolute;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 5px solid #fff;
+        left: 170px;
+        top: 21px;
+        
+    }
+    &__link::before{
+        content:' ';
+        position: absolute;
+        border: none;
+        height: 2px;
+        width: 17px;
+        left: 154px;
+        top: 24px;
+        background-color: #fff; 
+        
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 45px;
+    li{
+        padding: 0 5px;
+        line-height: 8px;
+        font-size: 10px;
+        @extend %rubik-400;
+        color: #243f4d;
+
+        button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fde3cc;
+        }
+        &.slick-active{
+            button{
+            background-color: #fff;
+            }
+        }
+    }
     }
 }
 
