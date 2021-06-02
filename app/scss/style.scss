@@ -6,6 +6,8 @@
 
 .container-top{
     max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header{
@@ -187,7 +189,7 @@
     }
     &__content{
         padding-top: 125px;
-        padding-left: 230px;
+        padding-left: 280px;
         
     
     }
@@ -198,6 +200,7 @@
         text-transform: uppercase;
         color: #243f4d;
         padding-bottom: 20px;
+        max-width: 450px;
     }
     &__text{
         @extend %rubik-400;
@@ -235,7 +238,9 @@
         left: 154px;
         top: 24px;
         background-color: #fff; 
-        
+    }
+    .slick-slide img{
+        margin-right: 170px;
     }
     .slick-dots{
         display: flex;
@@ -263,5 +268,65 @@
     }
     }
 }
+.categories-info{
+    .container-top{
+        background-color: #fef7f0;
+    }
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    &__items{
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    &__items:nth-child(1){
+        padding-left: 140px;
+    }
+    
+    &__items:nth-child(2){
+        padding-left: 160px;
+        border-left: 1px solid #e8e4df;
+        border-right: 1px solid #e8e4df;
+    }
+    &__items:nth-child(3){
+        padding-left: 150px;
+    }
+    &__item-title{
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 40px;
+        color: #414141;
+        text-transform: capitalize;
+    }
+    &__item-text{
+        @extend %dmsans-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #676665;
+    }
+    }
+    
+}
+
+
+.video{
+    &__inner-popup{
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 185px 0;
+    }
+    &__play{
+        background-position: center center;
+    }
+}
+
 
 @import 'media';
