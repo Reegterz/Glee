@@ -312,6 +312,126 @@
     
 }
 
+.products{
+    margin-top: 70px;
+    .products-top{
+        text-align: center;
+        padding-bottom: 75px;
+        &__title{
+            @extend %dmsans-700;
+            font-size: 36px;
+            line-height: 40px;
+            color: $title-content;
+        }
+        &__items{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        &__item{
+            margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        }
+        &__link{
+            @extend %dmsans-700;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: $link;
+            transition:  all .3s;
+            
+        &:hover{
+            color: #1a1a1a;
+        }
+        }
+
+    }
+    .products-content{
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px 20px;
+        &__items{
+            display: flex;
+            flex-direction: column;
+            max-width: 270px;
+            max-height: 380px;
+            box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+            text-align: center;
+            border-radius: 10px;
+            &:hover{
+                .products-content__link-box{
+                transform: translateY(0);
+                }
+            }
+        }
+        &__img-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            padding-top: 50px;
+            padding-bottom: 60px;
+            
+        }
+        &__images{
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        &__link-box{
+            position: absolute;
+            left: 14px;
+            right: 0;
+            bottom: 50px;
+            transform: translateY(300%);
+            transition: all .3s;
+            
+            }
+            &__link{
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding-top: 12px;
+                margin-right: 15px;
+                transition: all .3s;
+                &:hover{
+                    background-color: #a3bbc8;
+                    path{
+                        fill: #fff;
+                    }
+                }
+                
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            &__title{
+                @extend %dmsans-500;
+                font-size: 16px;
+                line-height: 40px;
+                color: #243f4d;
+                
+            }
+            &__price{
+                @extend %dmsans-700;
+                font-size: 16px;
+                line-height: 40px;
+                color: #a3bbc8;
+                margin-bottom: 30px;
+            }
+           
+        }
+        
+    }
+
+  
+
 
 .video{
     &__inner-popup{
