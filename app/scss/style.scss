@@ -181,7 +181,6 @@
 }
 
 .top-slider{
-
     .container-top{
         background-color: #fcd7b6;
     }
@@ -193,8 +192,6 @@
     &__content{
         padding-top: 125px;
         padding-left: 280px;
-        
-    
     }
     &__title{
         @extend %rubik-500;
@@ -573,6 +570,7 @@
 }
 
 .articles{
+    padding-top: 40px;
     .articles-top{
         display: flex;
         justify-content: space-between;
@@ -729,5 +727,27 @@
     z-index: 1;
     padding-top: 80px;
 }
+.terms{
+    padding: 60px 0 70px;
+    &__title{
+        font-size: 24px;
+        line-height: 40px;
+        @extend %rubik-500;
+        padding: 60px 0 28px;
+        color: #243f4d;
+    }
+    ol{
+        padding-left: 30px;
+        list-style: decimal-leading-zero;
+    }
+    &__item-text{
+        padding-bottom: 28px;
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+    }
+}
+
 
 @import 'media';
