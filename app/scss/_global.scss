@@ -71,3 +71,37 @@ a{
             
         }
     }
+
+    .pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__list{
+            display: flex;
+            align-items: center;
+        }
+        &__item{
+            
+            margin-right: 8px;
+        }
+        &__link{
+            padding: 12px 18px;
+            border: 1px solid #a3bbc8;
+            color: #243f4d;
+            font-size: 16px;
+            line-height: 30px;
+            background-color: #fff;
+        }
+        &__link--active{
+            background-color: #a3bbc8;
+            color: #fff;
+        }
+        &__next{
+            padding: 7px 18px;
+            border: 1px solid #a3bbc8;
+            color: #243f4d;
+            font-size: 16px;
+            line-height: 30px;
+            background-color: #fff;
+        }
+    }
