@@ -20,15 +20,17 @@
     "ion-rangeslider": "^2.3.1",
     "jQuery": "^1.7.4",
     "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
     "node-jquery": "^0.1.0",
     "node-sass": "^7.0.1",
-    "rateyo": "^3.0.0-alpha.2",
+    "rateyo": "^2.3.5",
     "sass": "^1.49.4"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "global": "^4.4.0",
     "gulp-cli": "^2.3.0",
+    "save-dev": "0.0.1-security",
     "slick-carousel": "^1.8.1"
   }
 }
